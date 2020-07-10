@@ -1,20 +1,20 @@
 package data;
 
-import lombok.AccessLevel;
-import lombok.Data;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import lombok.extern.slf4j.Slf4j;
 
 @Data
 class User {
+    //ignore a setter for a field
     @Setter(value = AccessLevel.NONE)
     protected Long id;
 
     protected String name;
 
+    @Getter(value = AccessLevel.NONE)
     protected boolean active;
 
+    //ignore a field
     @ToString.Exclude
     private String role;
 }
@@ -29,7 +29,5 @@ public class DataExcludeFields {
         user.setRole("Admin");
 
         log.info(user.toString());
-
-
     }
 }

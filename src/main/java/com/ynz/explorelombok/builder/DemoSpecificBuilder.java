@@ -1,15 +1,17 @@
 package com.ynz.explorelombok.builder;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * Builder with specific fields
+ * Applying a @Builder on a constructor, building a new instance with specific fields.
  */
 
 @ToString
+@AllArgsConstructor
 class Project {
     private Integer id;
     private String title;

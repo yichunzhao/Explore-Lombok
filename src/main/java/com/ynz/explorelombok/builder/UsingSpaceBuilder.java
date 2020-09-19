@@ -7,7 +7,6 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * @Builder and @Data together Generated protected all-args, which can be accessed only within the package.
  */
-
 @Slf4j
 public class UsingSpaceBuilder {
     public static void main(String[] args) {

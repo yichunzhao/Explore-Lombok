@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * <H3>Data static constructor </H3>
  * Define a static factory Method 'create', meanwhile the non-argument constructor will become private. It forces
- * users to use static factory method to create instance.
+ * users to use static factory method to create instance. It only creates instances with non-argument.
  */
 @Data
 class Car {
@@ -28,7 +28,7 @@ class Car {
 }
 
 @Slf4j
-public class DemoFactoryMethod {
+public class DemoStaticConstructorMethod {
     public static void main(String[] args) {
         Car created = Car.create();
         created.setBrand("Audi");

@@ -1,14 +1,15 @@
 package com.ynz.explorelombok.model;
 
-import lombok.Builder;
-import lombok.Data;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 
-@Data
-@Builder
+/**
+ * Value objects
+ */
+@RequiredArgsConstructor(staticName = "of")
+@ToString
 public class Name {
+    @NonNull
     private String name;
-
-    public static Name of(String name) {
-        return new Name(name);
-    }
 }

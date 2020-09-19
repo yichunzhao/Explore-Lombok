@@ -3,6 +3,9 @@ package com.ynz.explorelombok.data;
 import lombok.*;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * how to ignore fields
+ */
 @Data
 class User {
     //ignore a setter for a field

@@ -13,7 +13,5 @@ public class UsingSpaceBuilder {
     public static void main(String[] args) {
         SpaceShip spaceShip = SpaceShip.builder().id(10).name("startLink").build();
         log.info(spaceShip.toString());
-
-        //SpaceShip spaceShip1 = new SpaceShip(12,"stars");
     }
 }
